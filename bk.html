@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自动刷新</title>
+</head>
+<body>
+	<h1>自动刷新</h1>
+	<p>打开此网页不要关闭即可，此网页会自动刷新</p>
+  <meta http-equiv="refresh" content="1800">
+
+	<script type="text/javascript">
+
+		<!--iframe循环使用的URL数组-->
+		var websites=[
+		"https://baike.baidu.com/item/%E6%9B%B9%E7%84%B1%E5%85%B5/58903573?fr=aladdin",//曹焱兵
+    "https://baike.baidu.com/item/%E6%9B%B9%E7%84%B1%E5%85%B5/58903573?fr=aladdin",//曹焱兵
+		"https://baike.baidu.com/item/%E6%9B%B9%E7%8E%84%E4%BA%AE/58903662?fr=aladdin",//曹玄亮
+    "https://baike.baidu.com/item/%E6%9B%B9%E7%8E%84%E4%BA%AE/58903662?fr=aladdin",//曹玄亮
+    "https://baike.baidu.com/item/%E5%A4%8F%E9%93%83/58903664?fr=aladdin",//夏玲
+    "https://baike.baidu.com/item/%E5%8C%97%E8%90%BD%E5%B8%88%E9%97%A8/58903574?fromModule=lemma_sense-layer#viewPageContent",//北落师门
+    "https://baike.baidu.com/item/%E5%8C%97%E8%90%BD%E5%B8%88%E9%97%A8/58903574?fromModule=lemma_sense-layer#viewPageContent",//北落师门
+    "https://baike.baidu.com/item/PPQ/60815772?fr=aladdin",//PPQ
+		"https://baike.baidu.com/item/%E9%98%8E%E9%A3%8E%E5%90%92/58903671?fromModule=lemma-qiyi_sense-lemma",//阎风吒
+    "https://baike.baidu.com/item/%E5%AD%99%E6%96%A9%E5%A4%A9/58903667?fromModule=lemma-qiyi_sense-lemma",//孙斩天
+    "https://baike.baidu.com/item/%E5%87%AF%E7%B1%B3%E6%8B%89/58908006?fromModule=lemma-qiyi_sense-lemma",//凯米拉
+		"https://baike.baidu.com/item/%E9%98%8E%E9%A3%8E%E5%90%92/58903671?fromModule=lemma-qiyi_sense-lemma",//阎风吒
+    "https://baike.baidu.com/item/%E5%AD%99%E6%96%A9%E5%A4%A9/58903667?fromModule=lemma-qiyi_sense-lemma",//孙斩天
+    "https://baike.baidu.com/item/%E5%87%AF%E7%B1%B3%E6%8B%89/58908006?fromModule=lemma-qiyi_sense-lemma",//凯米拉
+    ""
+		], 
+ 
+		<!--用于保存iframe节点引用的变量 -->
+		iframe, 
+ 
+		<!--显示每个网站的时间（毫秒）  -->
+		INTERVAL=3000, 
+
+		<!--跟踪当前幻灯片的变量 -->
+		currentSlide=-1; 
+
+		<!--产生随机数 -->
+		function getRandom (min, max) {
+		return Math.floor(Math.random() * (max - min)) + min;
+		}
+
+		<!--方法更新iframe的SRC属性  -->
+		function switchSlides(){ 
+			var x=getRandom(1,10);
+			currentSlide = (currentSlide+x)%websites.length; 
+			iframe.src = websites[currentSlide]; 
+		} 
+ 
+
+		<!--等待文档加载 -->
+		window.onload=function(){ 
+		<!--获取iframe引用  -->
+		iframe = document.getElementById("slides"); 
+		<!--使用setInterval设置切换幻灯片的重复任务 -->
+ 		setInterval(switchSlides,INTERVAL) 
+		}
+
+	</script>
+
+	<iframe id="slides" name="iframe_a" width="100%" height="500px" frameborder="0" ></iframe>
+	
+	
+</body>
+</html>
