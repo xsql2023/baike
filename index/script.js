@@ -7,6 +7,8 @@ window.onload = function(){
   document.getElementById('btn-6').addEventListener('click',goTo06)
   document.getElementById('btn-7').addEventListener('click',goTo07)
   document.getElementById('btn-8').addEventListener('click',goTo08)
+  document.getElementById('btn-9').addEventListener('click',goTo09) 
+
 }
 
 function goTo01(){
