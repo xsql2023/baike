@@ -11,9 +11,7 @@ window.onload = function(){
 
 }
 
-function goTo01(){
-  window.open('https://xsql2023.github.io/cibao.html')
-}
+function goTo01(){ window.open('https://xsql2023.github.io/cibao.html')}
 function goTo02(){
   window.open('https://baike.baidu.com/wikitask/square?qq-pf-to=pcqq.group')
 }
