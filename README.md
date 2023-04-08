@@ -1,4 +1,4 @@
-# <B>炫闪清灵专属网页  https://xsql2023.github.io </B>
+# <B>百度百科聚合页面  https://xsql2023.github.io </B>
 
 <B>百度百科热词词包</B>
 
