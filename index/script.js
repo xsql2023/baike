@@ -28,11 +28,11 @@ function goTo06(){
   window.open('https://baike.baidu.com/planet/issue?issueId=3057823')
 }
 function goTo07(){
-  window.open('http://www.baidu.com')
+  window.open('https://tieba.baidu.com/f?kw=%B0%D9%BF%C6%F2%F2%F2%BD%CD%C5&fr=ala0&loc=rec')
 }
 function goTo08(){
-  window.open('http://www.baidu.com')
+  window.open('http://baike.baidu.com/mall/')
 }
 function goTo09(){
-  window.open('http://www.baidu.com')
+  window.open('https://help.baidu.com/question?prod_id=10')
 }
