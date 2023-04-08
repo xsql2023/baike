@@ -10,13 +10,13 @@ window.onload = function(){
 }
 
 function goTo01(){
-  window.open('https://sucloudplus.github.io/cibiao.html')
+  window.open('https://xsql2023.github.io/cibao.html')
 }
 function goTo02(){
-  window.open('https://sucloudplus.github.io/baike.html')
+  window.open('https://baike.baidu.com/wikitask/square?qq-pf-to=pcqq.group')
 }
 function goTo03(){
-  window.open('http://www.baidu.com')
+  window.open('http://www.hbaidu.hcom')
 }
 function goTo04(){
   window.open('http://www.baidu.com')
