@@ -22,7 +22,7 @@ function goTo04(){
   window.open('https://baike.baidu.com/wapui/subpage/knowledgetopic?id=eff646771a91d9c7dea07beb')
 }
 function goTo05(){
-  window.open('http://www.baidu.com')
+  window.open('https://baike.baidu.com/planet/issue?issueId=2717049')
 }
 function goTo06(){
   window.open('http://www.baidu.com')
