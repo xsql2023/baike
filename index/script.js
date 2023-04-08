@@ -25,7 +25,7 @@ function goTo05(){
   window.open('https://baike.baidu.com/planet/issue?issueId=2717049')
 }
 function goTo06(){
-  window.open('http://www.baidu.com')
+  window.open('https://baike.baidu.com/planet/issue?issueId=3057823')
 }
 function goTo07(){
   window.open('http://www.baidu.com')
